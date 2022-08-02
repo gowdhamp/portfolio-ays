@@ -425,15 +425,15 @@ section .title::after {
 .contact .contact-content .left .icons {
   margin: 10px 0;
 }
-.contact .contact-content .row {
+.contact .contact-content .row-s {
   display: flex;
   height: 65px;
   align-items: center;
 }
-.contact .contact-content .row .info {
+.contact .contact-content .row-s .info {
   margin-left: 30px;
 }
-.contact .contact-content .row i {
+.contact .contact-content .row-s i {
   font-size: 25px;
   color: var(--unique);
 }
