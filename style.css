@@ -128,25 +128,10 @@ section .title::after {
 
 /* navbar styling */
 .navbar-s {
-  position: sticky;
-  top: 0;
-  width: 100%;
   z-index: 999;
-  background: #ffffff;
   box-shadow: 0px 5px 10px rgba(0, 255, 0, 0.2);
-  padding: 10px 0;
   font-family: 'Ubuntu', sans-serif;
   transition: all 0.3s ease;
-}
-.navbar-s .max-width {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.navbar-s .logo a {
-  color: #000;
-  font-size: 35px;
-  font-weight: 600;
 }
 .navbar-s .logo a span {
   color: var(--unique);
@@ -157,37 +142,18 @@ section .title::after {
   display: inline-block;
 }
 .navbar-s .menu li a {
-  display: block;
-  color: #000;
-  font-size: 18px;
-  font-weight: 500;
-  margin-left: 25px;
   transition: color 0.3s ease;
 }
 .navbar-s .menu li a:hover {
-  color: var(--unique);
+  color: var(--unique) !important;
 }
 
-/* menu btn styling */
-.menu-btn {
-  color: #000;
-  font-size: 23px;
-  cursor: pointer;
-  display: none;
-}
 .scroll-up-btn {
-  position: fixed;
   height: 45px;
   width: 42px;
   background: var(--unique);
-  right: 30px;
-  bottom: 10px;
-  text-align: center;
   line-height: 45px;
-  color: #fff;
   z-index: 9999;
-  font-size: 30px;
-  border-radius: 6px;
   border-bottom-width: 2px;
   cursor: pointer;
   opacity: 0;
@@ -205,18 +171,12 @@ section .title::after {
 
 /* home section styling */
 .home {
-  display: flex;
   background: url('images/background.webp') no-repeat center;
   height: 100vh;
-  color: #fff;
   min-height: 500px;
   background-size: cover;
   background-attachment: fixed;
   font-family: 'Ubuntu', sans-serif;
-}
-.home .max-width {
-  width: 100%;
-  display: flex;
 }
 .home .max-width .row {
   margin-right: 0;
@@ -238,37 +198,16 @@ section .title::after {
   font-weight: 500;
 }
 .home .home-content a {
-  display: inline-block;
   background: var(--unique);
-  color: #fff;
-  font-size: 25px;
-  padding: 12px 36px;
-  margin-top: 20px;
-  font-weight: 400;
-  border-radius: 6px;
-  border: 2px solid var(--unique);
   transition: all 0.3s ease;
 }
 .home .home-content a:hover {
-  color: var(--unique);
-  background: none;
+  background: #333;
 }
 
 /* about section styling */
 .about .title::after {
-  content: 'who i am';
-}
-.about .about-content .left {
-  width: 45%;
-}
-.about .about-content .left img {
-  height: 400px;
-  width: 400px;
-  object-fit: cover;
-  border-radius: 6px;
-}
-.about .about-content .right {
-  width: 55%;
+  content: 'who we are';
 }
 .about .about-content .right .text {
   font-size: 25px;
@@ -282,20 +221,11 @@ section .title::after {
   text-align: justify;
 }
 .about .about-content .right a {
-  display: inline-block;
   background: var(--unique);
-  color: #fff;
-  font-size: 20px;
-  font-weight: 500;
-  padding: 10px 30px;
-  margin-top: 20px;
-  border-radius: 6px;
-  border: 2px solid var(--unique);
   transition: all 0.3s ease;
 }
 .about .about-content .right a:hover {
-  color: var(--unique);
-  background: none;
+  background: #333;
 }
 
 /* services section styling */
@@ -518,21 +448,12 @@ footer span a:hover {
 }
 
 /* responsive media query start */
-@media (max-width: 1104px) {
-  .about .about-content .left img {
-    height: 350px;
-    width: 350px;
-  }
-}
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
   .max-width {
     padding: 0 50px;
   }
-}
-@media (max-width: 947px) {
   .menu-btn {
-    display: block;
     z-index: 999;
   }
   .menu-btn i.active:before {
@@ -573,17 +494,14 @@ footer span a:hover {
   .max-width {
     max-width: 930px;
   }
-  .about .about-content .column {
-    width: 100%;
-  }
-  .about .about-content .left {
+  /* .about .about-content .left {
     display: flex;
     justify-content: center;
     margin: 0 auto 60px;
   }
   .about .about-content .right {
     flex: 100%;
-  }
+  } */
   .services .serv-content .card {
     width: calc(50% - 10px);
     margin-bottom: 20px;
@@ -619,6 +537,15 @@ footer span a:hover {
   }
   .home .home-content .text-3 {
     font-size: 27px;
+  }
+  .about .about-content .left {
+    padding: 1rem !important;
+  }
+  .about .about-content .left img {
+    height: 200px !important;
+  }
+  .about .about-content .left .collage img {
+    height: 100px !important;
   }
   .about .about-content .right .text,
   .skills .skills-content .left .text {
