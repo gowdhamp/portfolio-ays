@@ -129,7 +129,7 @@ section .title::after {
 /* navbar styling */
 .navbar-s {
   z-index: 999;
-  box-shadow: 0px 5px 10px rgba(0, 255, 0, 0.2);
+  box-shadow: rgb(0 0 0 / 10%) 0px 0px 40px 0px;
   font-family: 'Ubuntu', sans-serif;
   transition: all 0.3s ease;
 }
@@ -176,6 +176,7 @@ section .title::after {
   min-height: 500px;
   background-size: cover;
   background-attachment: fixed;
+  background-position-y: 4rem;
   font-family: 'Ubuntu', sans-serif;
 }
 .home .max-width .row {
@@ -229,82 +230,121 @@ section .title::after {
 }
 
 /* services section styling */
-/* .services, .teams{
-    color:#fff;
-    background: #111;
-} */
+.services {
+  /* color: #000; */
+  background: #f5f5f5;
+}
 /* .services .title::before,
 .teams .title::before {
   background: #fff;
 } */
 .services .title::after,
 .teams .title::after {
-  background: #fff;
-  content: 'what i provide';
+  background: #f5f5f5;
+  content: 'what we provide';
 }
 .services .serv-content .card {
   width: calc(33% - 20px);
-  background: #eaeaea;
-  text-align: center;
-  border-radius: 6px;
-  padding: 50px 25px;
+  background: #ffffff;
+  border: none !important;
+  padding: 15px;
   cursor: pointer;
+  box-shadow: rgb(0 0 0 / 10%) 0px 0px 40px 0px;
   transition: all 0.3s ease;
 }
-.services .serv-content .card:hover {
+.services .serv-content .card:hover .btn-card {
   background: var(--unique);
 }
-.services .serv-content .card .box {
-  transition: all 0.3s ease;
+.services .serv-content .card:hover .btn-card::before {
+  background: #111;
 }
-.services .serv-content .card:hover .box {
-  transform: scale(1.05);
+.services .serv-content .card:hover .btn-card button {
+  color: #ffffff !important;
 }
-.services .serv-content .card i {
-  font-size: 50px;
-  color: var(--unique);
-  transition: color 0.3s ease;
+.serv-content .card .content {
+  padding: 20px;
+  position: relative;
 }
-.services .serv-content .card:hover i {
-  color: #fff;
+.serv-content .card .content .logo {
+  position: absolute;
+  top: -20px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 10px;
+  right: 20px;
+  box-shadow: rgb(0 0 0 / 20%) 0px 0px 40px 0px;
 }
 .services .serv-content .card .text {
   font-size: 25px;
   font-weight: 500;
   margin: 10px 0 7px 0;
 }
+.services .serv-content .card .btn-card {
+  background-color: #f5f5f5;
+  padding: 0.5rem;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.services .serv-content .card .btn-card::before {
+  content: '';
+  background-color: #099126;
+  position: absolute;
+  width: 80px;
+  transform: skew(-36deg);
+  height: 100%;
+  right: -20px;
+  top: 0;
+  transition: all 0.3s ease;
+}
+.services .serv-content .card .btn-card::after {
+  content: '';
+  background: url('./images/right-arrows.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 30px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 100%;
+  right: 5px;
+  top: 0;
+}
 
 /* teams section styling */
 .teams .title::after {
   content: 'who with me';
 }
-.teams .carousel .card {
+.teams .carousel .card-s {
   background: #eaeaea;
   border-radius: 6px;
   padding: 25px 35px;
+  width: 300px;
   text-align: center;
   overflow: hidden;
   transition: all 0.3s ease;
 }
-.teams .carousel .card:hover {
+.teams .carousel .card-s:hover {
   background: var(--unique);
 }
-.teams .carousel .card .box {
+.teams .carousel .card-s .box {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
 }
-.teams .carousel .card:hover .box {
+.teams .carousel .card-s:hover .box {
   transform: scale(1.05);
 }
-.teams .carousel .card .text {
+.teams .carousel .card-s .text {
   font-size: 25px;
   font-weight: 500;
   margin: 10px 0 7px 0;
 }
-.teams .carousel .card img {
+.teams .carousel .card-s img {
   height: 150px;
   width: 150px;
   object-fit: cover;
@@ -312,28 +352,18 @@ section .title::after {
   border: 5px solid var(--unique);
   transition: all 0.3s ease;
 }
-.teams .carousel .card:hover img {
+.teams .carousel .card-s:hover img {
   border-color: #fff;
 }
-.owl-dots {
-  text-align: center;
-  margin-top: 20px;
+.swiper-pagination {
+  position: relative !important;
+  margin-top: 1rem;
 }
-.owl-dot {
-  height: 13px;
-  width: 13px;
-  margin: 0 5px;
-  outline: none !important;
-  border-radius: 50%;
-  border: 2px solid var(--unique) !important;
-  transition: all 0.3s ease;
-}
-.owl-dot.active {
-  width: 35px;
-  border-radius: 14px;
-}
-.owl-dot.active,
-.owl-dot:hover {
+
+.swiper-pagination-bullet-active {
+  height: 7px !important;
+  width: 20px !important;
+  border-radius: 25px !important;
   background: var(--unique) !important;
 }
 
