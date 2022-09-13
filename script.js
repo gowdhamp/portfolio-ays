@@ -1,4 +1,47 @@
+// AOS script
+AOS.init({
+  duration: 1200,
+  delay: 400,
+});
+
+// Swiper-js script
+var swiper = new Swiper('.carousel', {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  grabCursor: true,
+  breakpoints: {
+    // when window width is <= 499px
+    499: {
+      slidesPerView: 1,
+    },
+    // when window width is <= 999px
+    699: {
+      slidesPerView: 2,
+    },
+    // when window width is <= 999px
+    1199: {
+      slidesPerView: 3,
+    },
+  },
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+  },
+});
+
 $(document).ready(function () {
+  // counter up Animation
+  $('.counter-wrap .number').counterUp({
+    delay: 10,
+    time: 2000,
+  });
+
   $(window).scroll(function () {
     // sticky navbar on scroll script
     if (this.scrollY > 20) {
@@ -51,10 +94,5 @@ $(document).ready(function () {
     typeSpeed: 100,
     backSpeed: 60,
     loop: true,
-  });
-  // counter up Animation
-  $('.number').counterUp({
-    delay: 10,
-    time: 1200,
   });
 });

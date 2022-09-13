@@ -35,6 +35,14 @@ ul {
   margin-bottom: 0 !important;
 }
 
+.custom-btn {
+  background: var(--unique);
+  transition: all 0.3s ease;
+}
+.custom-btn:hover {
+  background: #333;
+}
+
 /* all similar content styling codes */
 section {
   padding: 100px 0;
@@ -44,6 +52,7 @@ section {
   padding: 0 80px;
   margin: auto;
 }
+.swn-container span,
 .about,
 .services,
 .skills,
@@ -84,7 +93,7 @@ section .title::after {
   position: absolute;
   bottom: -8px;
   left: 50%;
-  font-size: 20px;
+  font-size: 18px;
   color: var(--unique);
   padding: 0 5px;
   background: #fff;
@@ -96,9 +105,6 @@ section .title::after {
 .swn-container span {
   font-size: 14px;
   margin-right: 0.5rem;
-}
-.swn-container span {
-  font-family: 'Poppins', sans-serif;
 }
 .swn-bar {
   z-index: 1;
@@ -119,7 +125,7 @@ section .title::after {
   position: absolute;
   top: 0;
   left: -20px;
-  width: 40%;
+  width: 45%;
   height: 100%;
   z-index: -1;
   transform: skew(-26deg);
@@ -174,38 +180,17 @@ section .title::after {
 .home {
   background: url('images/background.webp') no-repeat center;
   height: 100vh;
-  width: 100%;
   min-height: 500px;
   background-size: cover;
   background-attachment: fixed;
   background-position-y: 3.5rem;
   font-family: 'Ubuntu', sans-serif;
 }
-.home .max-width .row {
-  margin-right: 0;
-}
 .home .home-content .text-1 {
   font-size: 27px;
 }
-.home .home-content .text-2 {
-  font-size: 75px;
-  font-weight: 600;
-  margin-left: -3px;
-}
 .home .home-content .text-3 {
   font-size: 40px;
-  margin: 5px 0;
-}
-.home .home-content .text-3 span {
-  color: var(--unique);
-  font-weight: 500;
-}
-.home .home-content a {
-  background: var(--unique);
-  transition: all 0.3s ease;
-}
-.home .home-content a:hover {
-  background: #333;
 }
 
 /* about section styling */
@@ -215,20 +200,9 @@ section .title::after {
 .about .about-content .right .text {
   font-size: 25px;
   font-weight: 600;
-  margin-bottom: 10px;
 }
 .about .about-content .right .text span {
   color: var(--unique);
-}
-.about .about-content .right p {
-  text-align: justify;
-}
-.about .about-content .right a {
-  background: var(--unique);
-  transition: all 0.3s ease;
-}
-.about .about-content .right a:hover {
-  background: #333;
 }
 
 /* services section styling */
@@ -245,11 +219,9 @@ section .title::after {
   background: #f5f5f5;
   content: 'what we provide';
 }
+
 .services .serv-content .card {
   width: calc(33% - 20px);
-  background: #ffffff;
-  border: none !important;
-  padding: 15px;
   cursor: pointer;
   box-shadow: rgb(0 0 0 / 10%) 0px 0px 40px 0px;
   transition: all 0.3s ease;
@@ -263,29 +235,23 @@ section .title::after {
 .services .serv-content .card:hover .btn-card button {
   color: #ffffff !important;
 }
-.serv-content .card .content {
-  padding: 20px;
-  position: relative;
-}
 .serv-content .card .content .logo {
-  position: absolute;
   top: -20px;
-  background-color: #ffffff;
-  border-radius: 50%;
-  padding: 10px;
   right: 20px;
   box-shadow: rgb(0 0 0 / 20%) 0px 0px 40px 0px;
 }
 .services .serv-content .card .text {
   font-size: 25px;
   font-weight: 500;
-  margin: 10px 0 7px 0;
+}
+.services .serv-content .card p {
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .services .serv-content .card .btn-card {
   background-color: #f5f5f5;
-  padding: 0.5rem;
-  overflow: hidden;
-  position: relative;
   transition: all 0.3s ease;
 }
 .services .serv-content .card .btn-card::before {

@@ -5,7 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio Website</title>
-    <link rel="stylesheet" href="style.css?v=1.2" />
+
+    <!-- custom css link  -->
+    <link rel="stylesheet" href="style.css?v=1.3" />
 
     <!-- Font Awesome  -->
     <link
@@ -15,10 +17,7 @@
     <!-- bootstrap  -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+      rel="stylesheet"/>
     <!-- Sliderjs -->
     <link
       rel="stylesheet"
@@ -30,10 +29,12 @@
     <!-- Jquery  -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
     <!-- typerjs -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
   </head>
   <body>
+
     <!-- Scroll up button  -->
     <div
       class="scroll-up-btn position-fixed end-0 bottom-0 m-4 text-center text-white fs-4 rounded-1"
@@ -124,12 +125,12 @@
     </div>
 
     <!-- home section start -->
-    <section class="home d-flex text-white position-relative" id="home">
+    <section class="home d-flex text-white position-relative w-100" id="home">
         <div class="max-width w-100 d-flex">
             <div class="home-content col col-md-6" data-aos="fade-up">
-                <div class="text-3 fw-bold text-dark">Enhancement begins with the Endorcement</div>
+                <div class="text-3 fw-bold text-dark my-3">Enhancement begins with the Endorcement</div>
                 <div class="text-1 text-white">Having a thought of breaking the path and making things happen out of the odds, we are here to make it out.</div>
-                <a class="d-inline-block text-white fs-4 py-2 px-5 mt-3 fw-normal rounded-2" href="#">Place Order</a>
+                <a class="custom-btn d-inline-block text-white fs-4 py-2 px-5 mt-3 fw-normal rounded-2" href="#">Place Order</a>
             </div>
         </div>
       </div>
@@ -165,8 +166,8 @@
             </div>
           </div>
           <div class="right col col-md-6 col-12" data-aos="fade-up">
-            <div class="text">We are doing <span class="typing"></span></div>
-            <p>
+            <div class="text mb-3">We are doing <span class="typing"></span></div>
+            <p class="text-justify">
               AYS is a digital service provider that helps you start and improve
               your online oriennted buisness, we provide service in various
               forms as per the user requirements right from webpage creation to
@@ -183,7 +184,7 @@
                   height="50px"
                 />
 
-                <p class="text-start m-2 fw-bold">
+                <p class="text-start m-2 fw-bold text-justify">
                   Website Design and Development
                 </p>
               </div>
@@ -196,17 +197,17 @@
                   width="50px"
                   height="50px"
                 />
-                <p class="text-start m-2 fw-bold">
+                <p class="text-start m-2 fw-bold text-justify">
                   Android and iOs Apps Development
                 </p>
               </div>
             </div>
-            <p>
+            <p class="text-justify">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Consequatur velit consectetur odit explicabo voluptatem ad.
             </p>
             <a
-              class="d-inline-block text-white fs-4 py-2 px-5 mt-3 fw-normal rounded-2"
+              class="custom-btn d-inline-block text-white fs-4 py-2 px-5 mt-3 fw-normal rounded-2"
               href="#"
               >Download CV</a
             >
@@ -220,7 +221,7 @@
       <div class="max-width">
         <h2 class="title">Our services</h2>
         <div class="serv-content">
-          <div class="card" data-aos="fade-up" data-aos-duration="2000">
+          <div class="card bg-white border-0 p-3" data-aos="fade-up" data-aos-duration="2000">
             <div class="image">
               <img
                 src="./images/web-design.webp"
@@ -228,8 +229,8 @@
                 width="100%"
               />
             </div>
-            <div class="content">
-              <div class="logo">
+            <div class="content position-relative p-3">
+              <div class="logo position-absolute bg-white rounded-circle p-2 ">
                 <img
                   src="./images/web-design-logo.png"
                   alt="logo-web"
@@ -237,17 +238,17 @@
                   height="40px"
                 />
               </div>
-              <div class="text">Web Design</div>
+              <div class="text my-2">Web Design</div>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem
                 quia sunt, quasi quo illo enim. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis vel modi eveniet iure sed ipsam! Lorem ipsum dolor sit amet.
               </p>
             </div>
-            <div class="btn-card">
+            <div class="btn-card p-2 position-relative overflow-hidden">
               <button class="btn">Learn More</button>
             </div>
           </div>
-          <div class="card" data-aos="fade-up" data-aos-duration="2000">
+          <div class="card bg-white border-0 p-3" data-aos="fade-up" data-aos-duration="2000">
             <div class="image">
               <img
                 src="./images/web-dev.webp"
@@ -255,8 +256,8 @@
                 width="100%"
               />
             </div>
-            <div class="content">
-              <div class="logo">
+            <div class="content position-relative p-3">
+              <div class="logo position-absolute bg-white rounded-circle p-2 ">
                 <img
                   src="./images/web-dev-logo.png"
                   alt="logo-web"
@@ -264,17 +265,17 @@
                   height="40px"
                 />
               </div>
-              <div class="text">Web Development</div>
+              <div class="text my-2">Web Development</div>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem
-                quia sunt, quasi quo illo enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, nobis. Nostrum fugiat nihil libero aut.
+                quia sunt, quasi quo illo enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, nobis. Nostrum fugiat nihil libero aut. Lorem ipsum dolor sit.
               </p>
             </div>
-            <div class="btn-card">
+            <div class="btn-card p-2 position-relative overflow-hidden">
               <button class="btn">Learn More</button>
             </div>
           </div>
-          <div class="card" data-aos="fade-up" data-aos-duration="2000">
+          <div class="card bg-white border-0 p-3" data-aos="fade-up" data-aos-duration="2000">
             <div class="image">
               <img
                 src="./images/web-design.webp"
@@ -282,8 +283,8 @@
                 width="100%"
               />
             </div>
-            <div class="content">
-              <div class="logo">
+            <div class="content position-relative p-3">
+              <div class="logo position-absolute bg-white rounded-circle p-2 ">
                 <img
                   src="./images/web-design-logo.png"
                   alt="logo-web"
@@ -291,13 +292,13 @@
                   height="40px"
                 />
               </div>
-              <div class="text">Web Design</div>
+              <div class="text my-2">Web Design</div>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem
                 quia sunt, quasi quo illo enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit distinctio quis voluptas voluptatem soluta sapiente!
               </p>
             </div>
-            <div class="btn-card">
+            <div class="btn-card p-2 position-relative overflow-hidden">
               <button class="btn">Learn More</button>
             </div>
           </div>
@@ -311,7 +312,7 @@
       <div class="max-width">
         <div class="row">
           <div class="col-sm-6 col-md-6 col-lg-4 d-flex align-items-stretch">
-            <div class="counter-wrap position-relative w-100 d-flex" data-aos="fade-up">
+            <div class="counter-wrap mb-5 mb-lg-0 position-relative w-100 d-flex" data-aos="fade-up">
               <img src="./images/customer-review.png" width="60px" height="60px" alt=""/>
               <div class="text">
                 <h2 class="number">3000</h2>
@@ -320,7 +321,7 @@
             </div>
           </div>
           <div class="col-sm-6 col-md-6 col-lg-4 d-flex align-items-stretch">
-            <div class="counter-wrap position-relative w-100 d-flex" data-aos="fade-up">
+            <div class="counter-wrap mb-5 mb-lg-0 position-relative w-100 d-flex" data-aos="fade-up">
               <img src="./images/briefing.png" width="60px" height="60px" alt=""/>
               <div class="text">
                 <h2 class="number">120</h2>
@@ -329,7 +330,7 @@
             </div>
           </div>
           <div class="col-sm-6 col-md-6 col-lg-4 d-flex align-items-stretch">
-            <div class="counter-wrap position-relative w-100 d-flex" data-aos="fade-up">
+            <div class="counter-wrap mb-5 mb-lg-0 position-relative w-100 d-flex" data-aos="fade-up">
               <img src="./images/coffee.png" width="60px" height="60px" alt=""/>
               <div class="text">
                 <h2 class="number">12</h2>
@@ -533,58 +534,11 @@
     <!-- AOS Script  -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <script>
-      // AOS script
-      AOS.init({
-        duration: 1200,
-        delay: 400,
-      });
-
-      // Swiper-js script
-      var swiper = new Swiper('.carousel', {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        loop: true,
-        grabCursor: true,
-        breakpoints: {
-          // when window width is <= 499px
-          499: {
-            slidesPerView: 1,
-          },
-          // when window width is <= 999px
-          699: {
-            slidesPerView: 2,
-          },
-          // when window width is <= 999px
-          1199: {
-            slidesPerView: 3,
-          },
-        },
-        autoplay: {
-          delay: 4000,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-          dynamicBullets: true,
-        },
-      });
-    </script>
-
     <!-- custom js link  -->
-    <script src="script.js"></script>
+    <script src="script.js?v=1.0"></script>
 
     <!-- bootstrap -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
   </body>
 </html>
