@@ -52,4 +52,9 @@ $(document).ready(function () {
     backSpeed: 60,
     loop: true,
   });
+  // counter up Animation
+  $('.number').counterUp({
+    delay: 10,
+    time: 1200,
+  });
 });
