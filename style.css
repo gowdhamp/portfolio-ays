@@ -10,6 +10,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 html {
   scroll-behavior: smooth;
@@ -173,10 +174,11 @@ section .title::after {
 .home {
   background: url('images/background.webp') no-repeat center;
   height: 100vh;
+  width: 100%;
   min-height: 500px;
   background-size: cover;
   background-attachment: fixed;
-  background-position-y: 4rem;
+  background-position-y: 3.5rem;
   font-family: 'Ubuntu', sans-serif;
 }
 .home .max-width .row {
@@ -230,8 +232,8 @@ section .title::after {
 }
 
 /* services section styling */
-.services {
-  /* color: #000; */
+.services,
+.contact {
   background: #f5f5f5;
 }
 /* .services .title::before,
@@ -239,7 +241,7 @@ section .title::after {
   background: #fff;
 } */
 .services .title::after,
-.teams .title::after {
+.contact .title::after {
   background: #f5f5f5;
   content: 'what we provide';
 }
@@ -318,53 +320,121 @@ section .title::after {
   content: 'who with me';
 }
 .teams .carousel .card-s {
-  background: #eaeaea;
-  border-radius: 6px;
-  padding: 25px 35px;
-  width: 300px;
-  text-align: center;
-  overflow: hidden;
+  position: relative;
+  background: #fff;
+  border-radius: 20px;
+  margin: 20px 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
-.teams .carousel .card-s:hover {
+.teams .carousel .card-s::before {
+  content: '';
+  position: absolute;
+  height: 40%;
+  width: 100%;
   background: var(--unique);
+  border-radius: 20px 20px 0 0;
 }
-.teams .carousel .card-s .box {
+.teams .carousel .card-s .card-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease;
+  padding: 30px;
+  position: relative;
+  z-index: 100;
 }
-.teams .carousel .card-s:hover .box {
-  transform: scale(1.05);
+.teams .carousel .card-s .image {
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  padding: 3px;
+  background: var(--unique);
 }
-.teams .carousel .card-s .text {
-  font-size: 25px;
-  font-weight: 500;
-  margin: 10px 0 7px 0;
-}
-.teams .carousel .card-s img {
-  height: 150px;
-  width: 150px;
+.teams .carousel .card-s .image img {
+  height: 100%;
+  width: 100%;
   object-fit: cover;
   border-radius: 50%;
-  border: 5px solid var(--unique);
-  transition: all 0.3s ease;
+  border: 3px solid #fff;
 }
-.teams .carousel .card-s:hover img {
-  border-color: #fff;
+.card-s .name-profession {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  color: #111;
+}
+.name-profession .name {
+  font-size: 20px;
+  font-weight: 600;
+}
+.name-profession .profession {
+  font-size: 15px;
+  font-weight: 500;
+}
+.card-s .rating {
+  display: flex;
+  align-items: center;
+  margin-top: 18px;
+}
+.card-s .rating i {
+  font-size: 18px;
+  margin: 0 2px;
+  color: var(--unique);
+}
+.teams .carousel .card-s .media-icons {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.teams .carousel .card-s .media-icons i {
+  color: #fff;
+  opacity: 0.6;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.teams .carousel .card-s .media-icons i:hover {
+  opacity: 1;
+}
+.card-s .button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.card-s .button button {
+  background: var(--unique);
+  outline: none;
+  border: none;
+  color: #fff;
+  padding: 8px 22px;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.card-s .button button:hover {
+  background: #111;
 }
 .swiper-pagination {
   position: relative !important;
   margin-top: 1rem;
 }
-
+.swiper-pagination-bullet {
+  opacity: 0.6 !important;
+  background: var(--unique) !important;
+}
 .swiper-pagination-bullet-active {
   height: 7px !important;
   width: 20px !important;
   border-radius: 25px !important;
   background: var(--unique) !important;
+  opacity: 1 !important;
 }
 
 /* contact section styling */
