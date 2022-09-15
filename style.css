@@ -152,8 +152,25 @@ section .title::after {
 }
 .navbar-s .menu li a {
   transition: color 0.3s ease;
+  position: relative;
 }
-.navbar-s .menu li a:hover {
+.navbar-s .menu li a::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  border-radius: 0.5rem;
+  background-color: var(--unique);
+  transition: all 0.3s ease;
+}
+.navbar-s .menu li a.active::after,
+.navbar-s .menu li a:hover:after {
+  width: 70%;
+}
+.navbar-s .menu li a:hover,
+.navbar-s .menu li a.active {
   color: var(--unique) !important;
 }
 
@@ -556,6 +573,14 @@ footer span a:hover {
     display: inline-block;
     margin: 20px 0;
     font-size: 25px;
+  }
+  .navbar-s .menu li a::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .navbar-s .menu li a.active::after,
+  .navbar-s .menu li a:hover::after {
+    width: 60px;
   }
   .home .home-content .text-2 {
     font-size: 70px;

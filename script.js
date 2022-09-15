@@ -35,14 +35,14 @@ var swiper = new Swiper('.carousel', {
   },
 });
 
-$(document).ready(function () {
+$(document).ready(() => {
   // counter up Animation
   $('.counter-wrap .number').counterUp({
     delay: 10,
     time: 2000,
   });
 
-  $(window).scroll(function () {
+  $(window).on('scroll load', () => {
     // sticky navbar on scroll script
     if (this.scrollY > 20) {
       $('.navbar-s').addClass('sticky');
@@ -59,19 +59,19 @@ $(document).ready(function () {
   });
 
   // slide-up script
-  $('.scroll-up-btn').click(function () {
+  $('.scroll-up-btn').click(() => {
     $('html').animate({ scrollTop: 0 });
     // removing smooth scroll on slide-up button click
     $('html').css('scrollBehavior', 'auto');
   });
 
-  $('.navbar .menu li a').click(function () {
+  $('.navbar .menu li a').click(() => {
     // applying again smooth scroll on menu items click
     $('html').css('scrollBehavior', 'smooth');
   });
 
   // toggle menu/navbar script
-  $('.menu-btn').click(function () {
+  $('.menu-btn').click(() => {
     $('.navbar-s .menu').toggleClass('active');
     $('.menu-btn i').toggleClass('active');
   });
@@ -88,11 +88,26 @@ $(document).ready(function () {
     backSpeed: 60,
     loop: true,
   });
-
-  var typed = new Typed('.typing-2', {
-    strings: ['YouTuber', 'Developer', 'Blogger', 'Designer', 'Freelancer'],
-    typeSpeed: 100,
-    backSpeed: 60,
-    loop: true,
-  });
 });
+
+// scroll spy
+let section = document.querySelectorAll('section');
+let navLinks = document.querySelectorAll('.navbar-s ul li a');
+
+window.onscroll = () => {
+  section.forEach((sec) => {
+    var top = window.scrollY;
+    var id = sec.getAttribute('id');
+    var height = sec.offsetHeight;
+    var offset = sec.offsetTop;
+
+    if (top >= offset && top < offset + height) {
+      navLinks.forEach((links) => {
+        links.classList.remove('active');
+        document
+          .querySelector('.navbar-s ul li a[href*=' + id + ']')
+          .classList.add('active');
+      });
+    }
+  });
+};
