@@ -99,7 +99,7 @@ window.onscroll = () => {
     var top = window.scrollY;
     var id = sec.getAttribute('id');
     var height = sec.offsetHeight;
-    var offset = sec.offsetTop;
+    var offset = sec.offsetTop - 20;
 
     if (top >= offset && top < offset + height) {
       navLinks.forEach((links) => {
@@ -110,4 +110,18 @@ window.onscroll = () => {
       });
     }
   });
+};
+
+var cursorFollower = document.querySelector('.cursor-follower');
+
+document.onmousemove = (e) => {
+  cursorFollower.style.left = e.pageX - 10 + 'px';
+  cursorFollower.style.top = e.pageY - 10 + 'px';
+};
+
+document.onclick = () => {
+  cursorFollower.classList.add('activeClick');
+  setTimeout(() => {
+    cursorFollower.classList.remove('activeClick');
+  }, 500);
 };

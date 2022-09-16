@@ -102,6 +102,54 @@ section .title::after {
   transform: translateX(-50%);
 }
 
+/* cursor-follower styling */
+#cursor-follower {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--unique);
+  position: absolute;
+  animation: cursorAnim 1s infinite;
+}
+#cursor-follower::before {
+  content: '';
+  width: 30px;
+  height: 30px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 2px solid var(--unique);
+  position: absolute;
+}
+#cursor-follower.activeClick {
+  animation: cursorClickAnim 500ms ease;
+}
+
+@keyframes cursorClickAnim {
+  0% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes cursorAnim {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 /* swn styling */
 .swn-container i,
 .swn-container span {
