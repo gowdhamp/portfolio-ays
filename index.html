@@ -1,547 +1,351 @@
 <!DOCTYPE html>
 <!-- Created By 201EE136 (gowdham.ee20@bitsathy.ac.in) -->
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website</title>
 
-    <!-- custom css link  -->
-    <link rel="stylesheet" href="style.css?v=1.3" />
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sudoers IT Solution</title <!-- custom css link -->
+  <link rel="stylesheet" href="style.css?v=1.3" />
 
-    <!-- Font Awesome  -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <!-- bootstrap  -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"/>
-    <!-- Sliderjs -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-    />
-    <!-- AOS  -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- Font Awesome  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <!-- bootstrap  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Sliderjs -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <!-- AOS  -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-    <!-- Jquery  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
-    <!-- typerjs -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-  </head>
-  <body>
-    <!-- cursor-follower -->
-    <div id="cursor-follower" class="cursor-follower"></div>
+  <!-- Jquery  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+  <!-- typerjs -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+</head>
 
-    <!-- Scroll up button  -->
-    <div
-      class="scroll-up-btn position-fixed end-0 bottom-0 m-4 text-center text-white fs-4 rounded-1"
-    >
-      <i class="fas fa-angle-up"></i>
-    </div>
+<body>
+  <!-- cursor-follower -->
+  <div id="cursor-follower" class="cursor-follower"></div>
 
-    <!-- Swn Container  -->
-    <div class="swn-bar position-relative bg-dark d-lg-block d-none">
-      <div
-        class="swn-container position-relative d-flex align-items-center justify-content-between mx-5 text-white py-2"
-      >
-        <div class="swn-left">
-          <ul class="d-flex align-items-center list-unstyled mb-0">
-            <li class="me-4">
-              <i class="fas fa-phone text-white"></i>
-              <span>+91 6379249121</span>
-            </li>
-            <li class="me-3">
-              <i class="fas fa-envelope text-white"></i>
-              <span>contact@atyourservice.in</span>
-            </li>
-          </ul>
-        </div>
-        <div class="swn-right">
-          <ul class="d-flex align-items-center list-unstyled mb-0">
-            <li class="me-4">
-              <i class="fas fa-clock text-success"></i>
-              <span>Mon-Sat: 9:00AM - 5:00PM</span>
-            </li>
-            <li class="me-3">
-              <a href="#"><i class="fab fa-facebook-f me-2"></i></a>
-              <a href="#"><i class="fab fa-twitter me-2"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in me-2"></i></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
+  <!-- Scroll up button  -->
+  <div class="scroll-up-btn position-fixed end-0 bottom-0 m-4 text-center text-white fs-4 rounded-1">
+    <i class="fas fa-angle-up"></i>
+  </div>
 
-    <!-- Navbar  -->
-    <div class="navbar-s position-sticky top-0 w-100 bg-white py-2 px-0">
-      <div class="max-width d-flex align-items-center justify-content-between">
-        <div class="logo">
-          <a class="text-dark fw-bold fs-2" href="#">Portfo<span>lio.</span></a>
-        </div>
-        <ul class="menu ps-0">
-          <li>
-            <a
-              href="#home"
-              class="menu-btn d-block text-dark fs-5 fw-semibold ms-lg-4"
-              >Home</a
-            >
+  <!-- Swn Container  -->
+  <div class="swn-bar position-relative bg-dark d-lg-block d-none">
+    <div class="swn-container position-relative d-flex align-items-center justify-content-between mx-5 text-white py-2">
+      <div class="swn-left">
+        <ul class="d-flex align-items-center list-unstyled mb-0">
+          <li class="me-4">
+            <i class="fas fa-phone text-white"></i>
+            <span>+91 9500202257</span>
           </li>
-          <li>
-            <a
-              href="#about"
-              class="menu-btn d-block text-dark fs-5 fw-semibold ms-lg-4"
-              >About</a
-            >
-          </li>
-          <li>
-            <a
-              href="#services"
-              class="menu-btn d-block text-dark fs-5 fw-semibold ms-lg-4"
-              >Services</a
-            >
-          </li>
-          <li>
-            <a
-              href="#teams"
-              class="menu-btn d-block text-dark fs-5 fw-semibold ms-lg-4"
-              >Teams</a
-            >
-          </li>
-          <li>
-            <a
-              href="#contact"
-              class="menu-btn d-block text-dark fs-5 fw-semibold ms-lg-4"
-              >Contact</a
-            >
+          <li class="me-3">
+            <i class="fas fa-envelope text-white"></i>
+            <span>sudoersitsolutions@gmail.com</span>
           </li>
         </ul>
-        <div class="menu-btn text-dark fs-4 d-block d-lg-none" role="button">
-          <i class="fas fa-bars"></i>
+      </div>
+      <div class="swn-right">
+        <ul class="d-flex align-items-center list-unstyled mb-0">
+          <li class="me-4">
+            <i class="fas fa-clock" style="color:#8cc63f;"></i>
+            <span>Mon-Sat: 9:00AM - 5:00PM</span>
+          </li>
+          <li class="me-3">
+            <a href="#"><i class="fab fa-facebook-f me-2" style="color:#8cc63f;"></i></a>
+            <a href="#"><i class="fab fa-twitter me-2" style="color:#8cc63f;"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in me-2" style="color:#8cc63f;"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar  -->
+  <div class="navbar-s position-sticky top-0 w-100 bg-white py-2 px-0">
+    <div class="max-width d-flex align-items-center justify-content-between">
+      <div class="logo">
+        <!-- <a class="text-dark fw-bold fs-2" href="#">Portfo<span>lio.</span></a> -->
+        <img src="/images/logo/logo-text-1.png" alt="Sudoers-logo">
+      </div>
+      <ul class="menu ps-0">
+        <li>
+          <a href="#home" class="menu-btn d-block text-dark fs-5 fw-semibold ms-lg-4">Home</a>
+        </li>
+        <li>
+          <a href="#about" class="menu-btn d-block text-dark fs-5 fw-semibold ms-lg-4">About</a>
+        </li>
+        <li>
+          <a href="#services" class="menu-btn d-block text-dark fs-5 fw-semibold ms-lg-4">Services</a>
+        </li>
+        <!-- <li>
+          <a href="#teams" class="menu-btn d-block text-dark fs-5 fw-semibold ms-lg-4">Teams</a>
+        </li> -->
+        <li>
+          <a href="#contact" class="menu-btn d-block text-dark fs-5 fw-semibold ms-lg-4">Contact</a>
+        </li>
+      </ul>
+      <div class="menu-btn text-dark fs-4 d-block d-lg-none" role="button">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- home section start -->
+  <section class="home d-flex text-white position-relative w-100" id="home">
+    <div class="max-width w-100 d-flex">
+      <div class="home-content col col-md-6" data-aos="fade-up">
+        <div class="text-3 fw-bold text-dark my-3">Enhancement begins with the Endorcement</div>
+        <div class="text-1 text-white">Having a thought of breaking the path and making things happen out of the odds,
+          we are here to make it out.</div>
+        <a class="custom-btn d-inline-block text-white fs-4 py-2 px-5 mt-3 fw-normal rounded-2" href="#">Place Order</a>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- about section start -->
+  <section class="about" id="about">
+    <div class="max-width">
+      <h2 class="title">About Us</h2>
+      <div class="about-content">
+        <div class="left col col-md-6 col-12 position-relative p-5" data-aos="fade-up">
+          <img src="images/about-1.webp" alt="" width="100%" height="250px" />
+          <div class="collage d-flex pt-3 position-relative">
+            <div class="col col-6 pe-2">
+              <img src="images/about-2.webp" alt="" width="100%" height="150px" />
+            </div>
+            <div class="col col-6">
+              <img src="images/about-3.webp" alt="" width="100%" height="150px" />
+            </div>
+          </div>
+        </div>
+        <div class="right col col-md-6 col-12 p-3 p-md-0" data-aos="fade-up">
+          <div class="text mb-3">We are doing <span class="typing"></span></div>
+          <p class="text-justify">
+            AYS is a digital service provider that helps you start and improve
+            your online oriennted buisness, we provide service in various
+            forms as per the user requirements right from webpage creation to
+            poster designing
+          </p>
+          <div class="d-block d-sm-flex align-items-center my-3">
+            <div class="col col-12 col-sm-6 d-block d-sm-block align-items-center me-2">
+              <img src="./images/coding.png" alt="web" width="50px" height="50px" />
+
+              <p class="text-start m-2 fw-bold text-justify">
+                Website Design and Development
+              </p>
+            </div>
+            <div class="col col-12 col-sm-6 d-block d-sm-block align-items-center me-2">
+              <img src="./images/mobile-development.png" alt="web" width="50px" height="50px" />
+              <p class="text-start m-2 fw-bold text-justify">
+                Android and iOS Apps Development
+              </p>
+            </div>
+          </div>
+          <p class="text-justify">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Consequatur velit consectetur odit explicabo voluptatem ad.
+          </p>
+          <!-- <a class="custom-btn d-inline-block text-white fs-4 py-2 px-5 mt-3 fw-normal rounded-2" href="#">Download
+            CV</a> -->
         </div>
       </div>
     </div>
+  </section>
 
-    <!-- home section start -->
-    <section class="home d-flex text-white position-relative w-100" id="home">
-        <div class="max-width w-100 d-flex">
-            <div class="home-content col col-md-6" data-aos="fade-up">
-                <div class="text-3 fw-bold text-dark my-3">Enhancement begins with the Endorcement</div>
-                <div class="text-1 text-white">Having a thought of breaking the path and making things happen out of the odds, we are here to make it out.</div>
-                <a class="custom-btn d-inline-block text-white fs-4 py-2 px-5 mt-3 fw-normal rounded-2" href="#">Place Order</a>
-            </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- about section start -->
-    <section class="about" id="about">
-      <div class="max-width">
-        <h2 class="title">About Us</h2>
-        <div class="about-content">
-          <div
-            class="left col col-md-6 col-12 position-relative p-5"
-            data-aos="fade-up"
-          >
-            <img src="images/about-1.webp" alt="" width="100%" height="250px" />
-            <div class="collage d-flex pt-3 position-relative">
-              <div class="col col-6 pe-2">
-                <img
-                  src="images/about-2.webp"
-                  alt=""
-                  width="100%"
-                  height="150px"
-                />
-              </div>
-              <div class="col col-6">
-                <img
-                  src="images/about-3.webp"
-                  alt=""
-                  width="100%"
-                  height="150px"
-                />
-              </div>
-            </div>
+  <!-- services section start -->
+  <section class="services" id="services">
+    <div class="max-width">
+      <h2 class="title">Our services</h2>
+      <div class="serv-content">
+        <div class="card bg-white border-0 p-3" data-aos="fade-up" data-aos-duration="2000">
+          <div class="image">
+            <img src="./images/web-design.webp" alt="Web Design" width="100%" />
           </div>
-          <div class="right col col-md-6 col-12 p-3 p-md-0" data-aos="fade-up">
-            <div class="text mb-3">We are doing <span class="typing"></span></div>
-            <p class="text-justify">
-              AYS is a digital service provider that helps you start and improve
-              your online oriennted buisness, we provide service in various
-              forms as per the user requirements right from webpage creation to
-              poster designing
-            </p>
-            <div class="d-block d-sm-flex align-items-center my-3">
-              <div
-                class="col col-12 col-sm-6 d-block d-sm-block align-items-center me-2"
-              >
-                <img
-                  src="./images/coding.png"
-                  alt="web"
-                  width="50px"
-                  height="50px"
-                />
-
-                <p class="text-start m-2 fw-bold text-justify">
-                  Website Design and Development
-                </p>
-              </div>
-              <div
-                class="col col-12 col-sm-6 d-block d-sm-block align-items-center me-2"
-              >
-                <img
-                  src="./images/mobile-development.png"
-                  alt="web"
-                  width="50px"
-                  height="50px"
-                />
-                <p class="text-start m-2 fw-bold text-justify">
-                  Android and iOs Apps Development
-                </p>
-              </div>
+          <div class="content position-relative p-3">
+            <div class="logo position-absolute bg-white rounded-circle p-2 ">
+              <img src="./images/web-design-logo.png" alt="logo-web" width="40px" height="40px" />
             </div>
-            <p class="text-justify">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Consequatur velit consectetur odit explicabo voluptatem ad.
-            </p>
-            <a
-              class="custom-btn d-inline-block text-white fs-4 py-2 px-5 mt-3 fw-normal rounded-2"
-              href="#"
-              >Download CV</a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- services section start -->
-    <section class="services" id="services">
-      <div class="max-width">
-        <h2 class="title">Our services</h2>
-        <div class="serv-content">
-          <div class="card bg-white border-0 p-3" data-aos="fade-up" data-aos-duration="2000">
-            <div class="image">
-              <img
-                src="./images/web-design.webp"
-                alt="Web Design"
-                width="100%"
-              />
-            </div>
-            <div class="content position-relative p-3">
-              <div class="logo position-absolute bg-white rounded-circle p-2 ">
-                <img
-                  src="./images/web-design-logo.png"
-                  alt="logo-web"
-                  width="40px"
-                  height="40px"
-                />
-              </div>
-              <div class="text my-2">Web Design</div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem
-                quia sunt, quasi quo illo enim. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis vel modi eveniet iure sed ipsam! Lorem ipsum dolor sit amet.
-              </p>
-            </div>
-            <div class="btn-card p-2 position-relative overflow-hidden">
-              <button class="btn">Learn More</button>
-            </div>
-          </div>
-          <div class="card bg-white border-0 p-3" data-aos="fade-up" data-aos-duration="2000">
-            <div class="image">
-              <img
-                src="./images/web-dev.webp"
-                alt="Web Development"
-                width="100%"
-              />
-            </div>
-            <div class="content position-relative p-3">
-              <div class="logo position-absolute bg-white rounded-circle p-2 ">
-                <img
-                  src="./images/web-dev-logo.png"
-                  alt="logo-web"
-                  width="40px"
-                  height="40px"
-                />
-              </div>
-              <div class="text my-2">Web Development</div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem
-                quia sunt, quasi quo illo enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, nobis. Nostrum fugiat nihil libero aut. Lorem ipsum dolor sit.
-              </p>
-            </div>
-            <div class="btn-card p-2 position-relative overflow-hidden">
-              <button class="btn">Learn More</button>
-            </div>
-          </div>
-          <div class="card bg-white border-0 p-3" data-aos="fade-up" data-aos-duration="2000">
-            <div class="image">
-              <img
-                src="./images/web-design.webp"
-                alt="Web Design"
-                width="100%"
-              />
-            </div>
-            <div class="content position-relative p-3">
-              <div class="logo position-absolute bg-white rounded-circle p-2 ">
-                <img
-                  src="./images/web-design-logo.png"
-                  alt="logo-web"
-                  width="40px"
-                  height="40px"
-                />
-              </div>
-              <div class="text my-2">Web Design</div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem
-                quia sunt, quasi quo illo enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit distinctio quis voluptas voluptatem soluta sapiente!
-              </p>
-            </div>
-            <div class="btn-card p-2 position-relative overflow-hidden">
-              <button class="btn">Learn More</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- counter section start  -->
-    <section class="counter" id="counter">
-      <div class="overlay"></div>
-      <div class="max-width">
-        <div class="row">
-          <div class="col-sm-6 col-md-6 col-lg-4 d-flex align-items-stretch">
-            <div class="counter-wrap mb-5 mb-lg-0 position-relative w-100 d-flex" data-aos="fade-up">
-              <img src="./images/customer-review.png" width="60px" height="60px" alt=""/>
-              <div class="text">
-                <h2 class="number">3000</h2>
-                <span class="caption">HAPPY CUSTOMERS</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-6 col-lg-4 d-flex align-items-stretch">
-            <div class="counter-wrap mb-5 mb-lg-0 position-relative w-100 d-flex" data-aos="fade-up">
-              <img src="./images/briefing.png" width="60px" height="60px" alt=""/>
-              <div class="text">
-                <h2 class="number">120</h2>
-                <span class="caption">PROJECTS COMPLETED</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-6 col-lg-4 d-flex align-items-stretch">
-            <div class="counter-wrap mb-5 mb-lg-0 position-relative w-100 d-flex" data-aos="fade-up">
-              <img src="./images/coffee.png" width="60px" height="60px" alt=""/>
-              <div class="text">
-                <h2 class="number">12</h2>
-                <span class="caption">CUP OF COFFEE</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- teams section start -->
-    <section class="teams" id="teams">
-      <div class="max-width">
-        <h2 class="title">Our teams</h2>
-        <div class="swiper carousel">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide card-s position-relative bg-white my-3">
-              <!-- <div class="box">
-                <img src="images/member1.jpg" alt="" />
-                <div class="text">Gowdham P</div>
-                <p>Full Stack Developer</p>
-              </div> -->
-              <div class="card-content d-flex align-items-center p-4 position-relative flex-column">
-                <div class="image">
-                  <img src="images/member1.webp" alt="">
-                </div>
-    
-                <div class="media-icons position-absolute d-flex align-items-center flex-column">
-                  <i class="fab fa-facebook"></i>
-                  <i class="fab fa-twitter"></i>
-                  <i class="fab fa-github"></i>
-                </div>
-    
-                <div class="name-profession d-flex align-items-center flex-column text-dark mt-2">
-                  <span class="name">GOWDHAM P</span>
-                  <span class="profession">Full Stack Developer</span>
-                </div>
-    
-                <div class="rating d-flex align-items-center mt-3">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half-alt"></i>
-                </div>
-    
-                <div class="button d-flex align-items-center justify-content-around w-100 mt-3">
-                  <button class="aboutMe custom-btn d-inline-block text-white py-2 px-3 fw-normal rounded-2">About Me</button>
-                  <button class="hireMe custom-btn d-inline-block text-white py-2 px-3 fw-normal rounded-2">Hire Me</button>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide card-s position-relative bg-white my-3">
-              <div class="card-content d-flex align-items-center p-4 position-relative flex-column">
-                <div class="image">
-                  <img src="images/member2.jpeg" alt="">
-                </div>
-    
-                <div class="media-icons position-absolute d-flex align-items-center flex-column">
-                  <i class="fab fa-facebook"></i>
-                  <i class="fab fa-twitter"></i>
-                  <i class="fab fa-github"></i>
-                </div>
-    
-                <div class="name-profession d-flex align-items-center flex-column text-dark mt-2">
-                  <span class="name">ABISHEK S</span>
-                  <span class="profession">Social Media Handler</span>
-                </div>
-    
-                <div class="rating d-flex align-items-center mt-3">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="far fa-star"></i>
-                </div>
-    
-                <div class="button d-flex align-items-center justify-content-around w-100 mt-3">
-                  <button class="aboutMe custom-btn d-inline-block text-white py-2 px-3 fw-normal rounded-2">About Me</button>
-                  <button class="hireMe custom-btn d-inline-block text-white py-2 px-3 fw-normal rounded-2">Hire Me</button>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide card-s position-relative bg-white my-3">
-              <div class="card-content d-flex align-items-center p-4 position-relative flex-column">
-                <div class="image">
-                  <img src="images/member3.jpg" alt="">
-                </div>
-    
-                <div class="media-icons position-absolute d-flex align-items-center flex-column">
-                  <i class="fab fa-facebook"></i>
-                  <i class="fab fa-twitter"></i>
-                  <i class="fab fa-github"></i>
-                </div>
-    
-                <div class="name-profession d-flex align-items-center flex-column text-dark mt-2">
-                  <span class="name">Someone Name</span>
-                  <span class="profession">Web Developer</span>
-                </div>
-    
-                <div class="rating d-flex align-items-center mt-3">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="far fa-star"></i>
-                  <i class="far fa-star"></i>
-                </div>
-    
-                <div class="button d-flex align-items-center justify-content-around w-100 mt-3">
-                  <button class="aboutMe custom-btn d-inline-block text-white py-2 px-3 fw-normal rounded-2">About Me</button>
-                  <button class="hireMe custom-btn d-inline-block text-white py-2 px-3 fw-normal rounded-2">Hire Me</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- contact section start -->
-    <section class="contact" id="contact">
-      <div class="max-width">
-        <h2 class="title">Contact Us</h2>
-        <div class="contact-content">
-          <div class="column left">
-            <div class="text">Get in Touch</div>
+            <div class="text my-2">Web Design</div>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Dignissimos harum corporis fuga corrupti. Doloribus quis soluta
-              nesciunt veritatis vitae nobis?
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem
+              quia sunt, quasi quo illo enim. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis vel modi
+              eveniet iure sed ipsam! Lorem ipsum dolor sit amet.
             </p>
-            <div class="icons position-relative">
-              <div class="row-s">
-                <i class="fas fa-user"></i>
-                <div class="info">
-                  <div class="head">Company</div>
-                  <div class="sub-title">AYS</div>
-                </div>
-              </div>
-              <div class="row-s">
-                <i class="fas fa-map-marker-alt"></i>
-                <div class="info">
-                  <div class="head">Address</div>
-                  <div class="sub-title">Sathyamangalam, Erode</div>
-                </div>
-              </div>
-              <div class="row-s">
-                <i class="fas fa-envelope"></i>
-                <div class="info">
-                  <div class="head">Email</div>
-                  <div class="sub-title">contact@ays.com</div>
-                </div>
-              </div>
-            </div>
           </div>
-
-          <div class="column right">
-            <div class="text">Message Us</div>
-            <form action="#">
-              <div class="fields">
-                <div class="field name">
-                  <input type="text" placeholder="Name" required />
-                </div>
-                <div class="field email">
-                  <input type="email" placeholder="Email" required />
-                </div>
-              </div>
-              <div class="field">
-                <input type="text" placeholder="Subject" required />
-              </div>
-              <div class="field textarea">
-                <textarea
-                  cols="30"
-                  rows="10"
-                  placeholder="Message.."
-                  required
-                ></textarea>
-              </div>
-              <div class="button-area">
-                <button type="submit">Send message</button>
-              </div>
-            </form>
+          <div class="btn-card p-2 position-relative overflow-hidden">
+            <button class="btn">Learn More</button>
+          </div>
+        </div>
+        <div class="card bg-white border-0 p-3" data-aos="fade-up" data-aos-duration="2000">
+          <div class="image">
+            <img src="./images/web-dev.webp" alt="Web Development" width="100%" />
+          </div>
+          <div class="content position-relative p-3">
+            <div class="logo position-absolute bg-white rounded-circle p-2 ">
+              <img src="./images/web-dev-logo.png" alt="logo-web" width="40px" height="40px" />
+            </div>
+            <div class="text my-2">Web Development</div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem
+              quia sunt, quasi quo illo enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, nobis.
+              Nostrum fugiat nihil libero aut. Lorem ipsum dolor sit.
+            </p>
+          </div>
+          <div class="btn-card p-2 position-relative overflow-hidden">
+            <button class="btn">Learn More</button>
+          </div>
+        </div>
+        <div class="card bg-white border-0 p-3" data-aos="fade-up" data-aos-duration="2000">
+          <div class="image">
+            <img src="./images/web-design.webp" alt="Web Design" width="100%" />
+          </div>
+          <div class="content position-relative p-3">
+            <div class="logo position-absolute bg-white rounded-circle p-2 ">
+              <img src="./images/web-design-logo.png" alt="logo-web" width="40px" height="40px" />
+            </div>
+            <div class="text my-2">Web Design</div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem
+              quia sunt, quasi quo illo enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit distinctio
+              quis voluptas voluptatem soluta sapiente!
+            </p>
+          </div>
+          <div class="btn-card p-2 position-relative overflow-hidden">
+            <button class="btn">Learn More</button>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- footer section start -->
-    <footer>
-      <span
-        >Created By <a href="#">AYS</a> |
-        <span class="far fa-copyright"></span> 2022 All rights reserved.</span
-      >
-    </footer>
+  <!-- counter section start  -->
+  <section class="counter" id="counter">
+    <div class="overlay"></div>
+    <div class="max-width">
+      <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-4 d-flex align-items-stretch">
+          <div class="counter-wrap mb-5 mb-lg-0 position-relative w-100 d-flex" data-aos="fade-up">
+            <img src="./images/customer-review.png" width="60px" height="60px" alt="" />
+            <div class="text">
+              <h2 class="number">50</h2>
+              <span class="caption">HAPPY CUSTOMERS</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4 d-flex align-items-stretch">
+          <div class="counter-wrap mb-5 mb-lg-0 position-relative w-100 d-flex" data-aos="fade-up">
+            <img src="./images/briefing.png" width="60px" height="60px" alt="" />
+            <div class="text">
+              <h2 class="number">70</h2>
+              <span class="caption">PROJECTS COMPLETED</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4 d-flex align-items-stretch">
+          <div class="counter-wrap mb-5 mb-lg-0 position-relative w-100 d-flex" data-aos="fade-up">
+            <img src="./images/coffee.png" width="60px" height="60px" alt="" />
+            <div class="text">  
+              <h2 class="number">12</h2>
+              <span class="caption">CUP OF COFFEE</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <!-- contact section start -->
+  <!-- <section class="contact" id="contact">
+    <div class="max-width">
+      <h2 class="title">Contact Us</h2>
+      <div class="contact-content">
+        <div class="column left">
+          <div class="text">Get in Touch</div>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Dignissimos harum corporis fuga corrupti. Doloribus quis soluta
+            nesciunt veritatis vitae nobis?
+          </p>
+          <div class="icons position-relative">
+            <div class="row-s">
+              <i class="fas fa-user"></i>
+              <div class="info">
+                <div class="head">Company</div>
+                <div class="sub-title">AYS</div>
+              </div>
+            </div>
+            <div class="row-s">
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="info">
+                <div class="head">Address</div>
+                <div class="sub-title">Sathyamangalam, Erode</div>
+              </div>
+            </div>
+            <div class="row-s">
+              <i class="fas fa-envelope"></i>
+              <div class="info">
+                <div class="head">Email</div>
+                <div class="sub-title">contact@ays.com</div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-    <!-- AOS Script  -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <div class="column right">
+          <div class="text">Message Us</div>
+          <form action="#">
+            <div class="fields">
+              <div class="field name">
+                <input type="text" placeholder="Name" required />
+              </div>
+              <div class="field email">
+                <input type="email" placeholder="Email" required />
+              </div>
+            </div>
+            <div class="field">
+              <input type="text" placeholder="Subject" required />
+            </div>
+            <div class="field textarea">
+              <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+            </div>
+            <div class="button-area">
+              <button type="submit">Send message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section> -->
 
-    <!-- custom js link  -->
-    <script src="script.js?v=1.0" defer></script>
+  <!-- footer section start -->
+  <footer>
+    <span>Created By <a href="#">Sudoers IT Solution</a> |
+      <span class="far fa-copyright"></span> <span id="year"></span> All rights reserved.</span>
+  </footer>
+  <!-- auto increment to year in CopyRight -->
+  <script>
+    document.getElementById('year').innerHTML = new Date().getFullYear();
+  </script>
 
-    <!-- bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
-  </body>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <!-- AOS Script  -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- custom js link  -->
+  <script src="script.js?v=1.0" defer></script>
+
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+</body>
+
 </html>
